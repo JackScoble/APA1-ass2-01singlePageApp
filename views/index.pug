@@ -3,22 +3,38 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Recipe - #{recipe.name}
+    title Recipe - #{recipe1.name}
     link(rel="stylesheet", href="/styles.css")
 
   body
     .container
-      h1= recipe.name
+      h1= recipe1.name
       
       .recipe
         section
           h2 Ingredients
           ul
-            each ingredient in recipe.ingredients
+            each ingredient in recipe1.ingredients
               li= ingredient
 
         section
           h2 Instructions
           ol
-            each instruction in recipe.instructions
+            each instruction in recipe1.instructions
+              li= instruction
+    
+    .container
+      h1= recipe2.name
+
+      .recipe
+        section
+          h2 Ingredients
+          ul
+            each ingredient in recipe2.ingredients
+              li= ingredient
+
+        section
+          h2 Instructions
+          ol
+            each instruction in recipe2.instructions
               li= instruction
