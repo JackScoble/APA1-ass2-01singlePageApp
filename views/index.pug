@@ -38,3 +38,19 @@ html(lang="en")
           ol
             each instruction in recipe2.instructions
               li= instruction
+
+    .container
+      h1= recipe3.name
+
+      .recipe
+        section
+          h2 Ingredients
+          ul
+            each ingredient in recipe3.ingredients
+              li= ingredient
+
+        section
+          h2 Instructions
+          ol
+            each instruction in recipe3.instructions
+              li= instruction

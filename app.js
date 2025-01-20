@@ -62,9 +62,34 @@ app.get('/', (req, res) => {
     'Add shrimp, mussels, and peas. Cover and cook until the rice is tender and the seafood is cooked through, about 10-15 minutes.',  
     'Season with salt and pepper. Serve with lemon wedges.'  
   ] 
-  };  
+  };
 
-  res.render('index', { recipe1: recipe1, recipe2: recipe2 });  
+  const recipe3 = {  
+    name: 'Ratatouille',  
+    ingredients: [  
+      '1/4 cup olive oil',  
+      '1 large eggplant, diced',  
+      '2 zucchini, sliced',  
+      '1 bell pepper, diced',  
+      '1 onion, chopped',  
+      '4 cloves garlic, minced',  
+      '6 tomatoes, chopped',  
+      '1 teaspoon dried thyme',  
+      '1 teaspoon dried oregano',  
+      'Salt and pepper to taste',  
+      'Fresh basil leaves for garnish'  
+    ],  
+    instructions: [  
+      'Heat olive oil in a large skillet over medium heat. Add eggplant and sauté until golden. Remove and set aside.',  
+      'In the same skillet, add zucchini and cook until lightly browned. Remove and set aside.',  
+      'Add bell pepper and onion to the skillet, sauté until soft. Add garlic and cook for another minute.',  
+      'Return the eggplant and zucchini to the skillet. Add tomatoes, thyme, and oregano. Simmer for 15-20 minutes until all vegetables are tender.',  
+      'Season with salt and pepper. Garnish with fresh basil before serving.'  
+    ]  
+  };  
+  
+
+  res.render('index', { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 });  
 });  
 
 // Start the server
